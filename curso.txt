@@ -1,0 +1,46 @@
+--- CURSO ---
+---- Spring Boot ----
+Creacion de proyecto basico con operaciones rest y llamadas a BBDD (myBatis).
+
+---- MyBatis ----
+
+---- MongoDB ----
+
+---- Microservicios ----
+Servicios pequeños autocontenidos y de responsabilidad unica.
+Autodescubrimiento de los microservicios.
+Cada microservicio tiene su propio acceso a BBDD. 
+Es decir, que un microservicio no puede acceder a la BBDD de otro microservicio.
+
+Ribbon
+Balanceo de carga.
+
+Eureka 
+Autoregistrador de servicios. Es un servicio propiamente el cual no
+se debe autoregistrar (application.properties)
+http://localhost:8761/
+Y cada cliente se debe indicar el registro en el servidor de Eureka (application.properties)
+
+MongoDB 
+Generacion mediante keywords:
+https://docs.spring.io/spring-data/mongodb/docs/1.2.0.RELEASE/reference/html/mongo.repositories.html
+https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html
+
+
+Tolerancia a fallos
+Hystrix o Resilience4J
+
+Control sobre peticiones con fallo y lentas
+CircuitBreaker
+
+Redireccionamiento de las peticiones
+Zuul antiguo, ahora mejor Spring Gateway
+
+Spring Cloud
+Servidor -> Se trata de otro microservicio el cual contiene toda la configuracion de todo. Esta configuracion se guarda en git
+En su config se indica la configuracion de cada servicio
+Cliente -> Se configura para que se conecte al servidor
+
+---- Spring Security ----
+
+---- JWT ----
